@@ -1,5 +1,5 @@
 {
-  "name": "video-perception",
+  "name": "@react-agents-plugins/video-perception",
   "version": "0.0.1",
   "main": "video-perception.tsx",
   "scripts": {
