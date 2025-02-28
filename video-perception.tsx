@@ -5,13 +5,16 @@ import dedent from 'dedent';
 import {
   ActionMessage,
   Attachment,
-  VideoPerceptionProps,
   PendingActionEvent,
 } from '../../types';
 import { AgentObject } from '../../classes/agent-object';
 import { Action } from '../core/action';
 import { describeJson } from '../../util/vision.mjs';
 import { collectAttachments } from '../util/message-utils';
+
+export type VideoPerceptionProps = {
+  hint?: string;
+};
 
 const getRandomId = () => crypto.randomUUID(); // used for schema substitutions
 
